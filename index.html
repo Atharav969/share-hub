@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>File Share Hub</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    min-height:100vh;
+}
+
+header{
+    text-align:center;
+    padding:50px 20px;
+    background:#111827;
+    border-bottom:1px solid #1f2937;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#9ca3af;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:18px;
+    padding:25px;
+    transition:.3s;
+    border:1px solid #334155;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#64748b;
+}
+
+.file-icon{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.file-name{
+    font-size:1.2rem;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.file-size{
+    color:#94a3b8;
+    margin-bottom:20px;
+}
+
+.download-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#f8fafc;
+    color:#111827;
+    padding:12px 22px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.download-btn:hover{
+    background:#cbd5e1;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#94a3b8;
+    border-top:1px solid #1f2937;
+    margin-top:50px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>File Share Hub</h1>
+    <p>Download files quickly and securely</p>
+</header>
+
+<div class="container">
+
+<div class="grid">
+
+    <div class="card">
+        <div class="file-icon">📄</div>
+        <div class="file-name">esp bin</div>
+        <div class="file-size">2.4 MB</div>
+        <a class="download-btn" href="esp8266_deauther_2.6.1_HACKHELD_VEGA_Atharav_Ronghe.bin" download>
+            Download esp bin
+        </a>
+    </div>
+
+    <div class="card">
+        <div class="file-icon">🖼️</div>
+        <div class="file-name">Wallpaper.jpg</div>
+        <div class="file-size">4.8 MB</div>
+        <a class="download-btn" href="Wallpaper.jpg" download>
+            Download
+        </a>
+    </div>
+
+    <div class="card">
+        <div class="file-icon">📦</div>
+        <div class="file-name">Software.zip</div>
+        <div class="file-size">28 MB</div>
+        <a class="download-btn" href="Software.zip" download>
+            Download
+        </a>
+    </div>
+
+</div>
+
+</div>
+
+<footer>
+    © 2026 File Share Hub
+</footer>
+
+</body>
+</html>
